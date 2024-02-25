@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="index.css"> 
+<html>
+<body>
+  <div>
+    <h2>
+      Welcome To OCR
+    </h2>
+  </div>
+<h1>Choose Your Image</h1>
+<button onclick="convert()">Choose Photo </button>
+<div class="fee-items fee-one">
+  
+</div>
+
+</div>
+
+
+
+<script>
+ const {ipcRenderer} = require('electron')
+function convert()
+{
+  ipcRenderer.send('m','hii ji')
+}  
+</script>
+</body>
+</html>
